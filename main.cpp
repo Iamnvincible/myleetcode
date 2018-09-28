@@ -1,7 +1,7 @@
-#include "Solution_33.h"
+#include "Solution_4.h"
 int main(int argc, char const *argv[])
 {
-    Solution_33 s;
+    Solution_4 s;
     s.test();
     return 0;
 }
