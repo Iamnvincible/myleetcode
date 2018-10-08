@@ -47,6 +47,7 @@ class Solution_128
     {
         std::vector<int> nums = {100, 4, 200, 1, 3, 2};
         int res = longestConsecutive(nums);
+        return res;
     }
 };
 /*
