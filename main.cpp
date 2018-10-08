@@ -1,12 +1,7 @@
-#include "Fibonacci.h"
+#include "Solution_128.hpp"
 int main(int argc, char const *argv[])
 {
-    Fibonacci s;
-    if (argc > 1)
-    {
-        int num = atoi(argv[1]);
-        s.test(num);
-        //s.test2(num);
-    }
+    Solution_128 s;
+    s.test();
     return 0;
 }
