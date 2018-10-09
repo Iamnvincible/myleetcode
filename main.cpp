@@ -1,9 +1,8 @@
-#include "Solution_128.hpp"
+#include "Solution_15.hpp"
 #include <iostream>
 int main(int argc, char const *argv[])
 {
-    Solution_128 s;
-    int res = s.test();
-    std::cout << res << std::endl;
+    Solution_15 s;
+    s.test();
     return 0;
 }
