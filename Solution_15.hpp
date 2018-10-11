@@ -4,7 +4,7 @@
  *Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique *triplets in the array which gives the sum of zero.
  *Note:
  *The solution set must not contain duplicate triplets.
- *先对给出的数组排序，而后对立面的元素循环，左右夹逼直到找到满足的另外两个数
+ *先对给出的数组排序，而后对里面的元素循环，左右夹逼直到找到满足的另外两个数
  *需要考虑重复的情况，即这轮循环的数字和上一轮循环的数是相等的，需要继续向后挪一位
  *用一个while来挪会比判断相等后+1 continue来得快
  *但是要关注到判断重复的条件，否则会出现重复解
