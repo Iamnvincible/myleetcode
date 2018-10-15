@@ -1,8 +1,8 @@
-#include "Solution_18.hpp"
+#include "Solution_31.hpp"
 #include <iostream>
 int main(int argc, char const *argv[])
 {
-    Solution_18 s;
+    Solution_31 s;
     s.test();
     return 0;
 }
