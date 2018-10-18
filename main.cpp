@@ -1,8 +1,8 @@
-#include "msra1.hpp"
+#include "Solution_36.hpp"
 #include <iostream>
 int main(int argc, char const *argv[])
 {
-    msra s;
+    Solution_36 s;
     s.test();
     return 0;
 }
