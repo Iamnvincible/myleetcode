@@ -1,8 +1,8 @@
-#include "Solution_36.hpp"
+#include "Solution_42.hpp"
 #include <iostream>
 int main(int argc, char const *argv[])
 {
-    Solution_36 s;
-    s.test();
+    int a, b, c = 23;
+    std::cout << a << std::endl;
     return 0;
 }
