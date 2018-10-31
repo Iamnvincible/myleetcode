@@ -1,16 +1,11 @@
 #include <iostream>
-#include "Fibonacci.h"
-#include "Solution_70.hpp"
+#include <vector>
+#include "Solution_73.hpp"
 int main(int argc, char const *argv[]) {
-  Solution_70_bak2 s;
-  Solution_70_bak1 s1;
-  Solution_70_bak3 s0;
-  Fibonacci f;
-  int c = 40;
-  s1.test(c);
-  s.test(c);
-  f.test(c+1);
-  s0.test(c);
+  Solution_73_bak s;
+  std::vector<std::vector<int>> v = {
+      {1, 2, 3, 4}, {5, 0, 5, 2}, {8, 9, 2, 0}, {5, 7, 2, 1}};
+  s.setZeroes(v);
 
   return 0;
 }
