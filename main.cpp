@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
-#include "Solution_73.hpp"
+#include "Solution_134.hpp"
+using namespace std;
 int main(int argc, char const *argv[]) {
-  Solution_73_bak s;
-  std::vector<std::vector<int>> v = {
-      {1, 2, 3, 4}, {5, 0, 5, 2}, {8, 9, 2, 0}, {5, 7, 2, 1}};
-  s.setZeroes(v);
-
+  vector<int> gas = {1,2,3,4,5,5,70};
+  vector<int> cost = {2,3,4,3,9,6,2};
+  Solution_134 s;
+  int res = s.canCompleteCircuit(gas, cost);
+  cout << res << endl;
   return 0;
 }
