@@ -1,12 +1,11 @@
 #include <iostream>
 #include <vector>
-#include "Solution_134.hpp"
+#include "Solution_135.hpp"
 using namespace std;
 int main(int argc, char const *argv[]) {
-  vector<int> gas = {1,2,3,4,5,5,70};
-  vector<int> cost = {2,3,4,3,9,6,2};
-  Solution_134 s;
-  int res = s.canCompleteCircuit(gas, cost);
+  vector<int> ratings = {1, 2, 3, 2, 3};
+  Solution_135 s;
+  int res = s.candy(ratings);
   cout << res << endl;
   return 0;
 }
