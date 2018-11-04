@@ -1,5 +1,5 @@
-#ifndef SOLUTION_46
-#define SOLUTION_46
+#ifndef SOLUTION_48
+#define SOLUTION_48
 /* You are given an n x n 2D matrix representing an image.
 Rotate the image by 90 degrees (clockwise).
 Note:
@@ -15,7 +15,7 @@ DO NOT allocate another 2D matrix and do the rotation.
 */
 #include <algorithm>
 #include <vector>
-class Solution_46 {
+class Solution_48 {
  public:
   void rotate(std::vector<std::vector<int>>& matrix) {
     int size = matrix.size();
@@ -34,7 +34,7 @@ class Solution_46 {
     }
   }
 };
-class Solution_46_bak {
+class Solution_48_bak {
  public:
   void rotate(std::vector<std::vector<int>>& matrix) {
     std::reverse(matrix.begin(), matrix.end());

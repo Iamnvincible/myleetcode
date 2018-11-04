@@ -11,7 +11,7 @@ Find that single one.
 出现了偶数次的元素都能清除
 */
 #include <vector>
-class Solution_137 {
+class Solution_136 {
 public:
     int singleNumber(std::vector<int>& nums) {
         int res=nums[0];
