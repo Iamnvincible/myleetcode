@@ -1,7 +1,8 @@
 #include <iostream>
-#include "LinkedList\\Solution_2.hpp"
+#include "LinkedList\\Solution_92.hpp"
 using namespace std;
 int main(int argc, char const* argv[]) {
-  Solution_2 s;
+  Solution_92 s;
+  s.test();
   return 0;
 }
