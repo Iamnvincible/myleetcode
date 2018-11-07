@@ -31,3 +31,4 @@ Solutions are divided by problem category.
 ## Linked List
 - 2 [Add Two Numbers](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.hpp) and [C version](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.h)
 - 92 [Reverse Linked List II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_92.hpp)
+- 86 [Partition List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_86.hpp)
