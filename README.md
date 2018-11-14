@@ -34,4 +34,5 @@ Solutions are divided by problem category.
 - 86 [Partition List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_86.hpp)
 - 83 [Remove Duplicates from Sorted List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_83.hpp)
 - 82 [Remove Duplicates from Sorted List II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_82.hpp)
-- 61 [Remove Duplicates from Sorted List II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_61.hpp)
+- 61 [Rotate List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_61.hpp)
+- 19 [Remove Nth Node From End of List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_19.hpp)
