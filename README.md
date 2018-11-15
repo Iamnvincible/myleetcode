@@ -36,3 +36,4 @@ Solutions are divided by problem category.
 - 82 [Remove Duplicates from Sorted List II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_82.hpp)
 - 61 [Rotate List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_61.hpp)
 - 19 [Remove Nth Node From End of List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_19.hpp)
+- 24 [Swap Nodes in Pairs](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_24.hpp)
