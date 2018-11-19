@@ -38,3 +38,4 @@ Solutions are divided by problem category.
 - 19 [Remove Nth Node From End of List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_19.hpp)
 - 24 [Swap Nodes in Pairs](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_24.hpp)
 - 25 [Reverse Nodes in k-Group](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_25.hpp)
+- 138 [Reverse Nodes in k-Group](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_138.hpp)
