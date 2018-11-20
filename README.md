@@ -40,3 +40,4 @@ Solutions are divided by problem category.
 - 25 [Reverse Nodes in k-Group](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_25.hpp)
 - 138 [Copy List with Random Pointer](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_138.hpp)
 - 141 [Linked List Cycle](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_141.hpp)
+- 142 [Linked List Cycle II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_142.hpp)
