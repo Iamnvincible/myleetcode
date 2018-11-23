@@ -1,8 +1,10 @@
 #include <iostream>
-#include "LinkedList\Solution_143.hpp"
+#include "String\Solution_125.hpp"
 using namespace std;
 int main(int argc, char const* argv[]) {
-  // Solution_138 s;
+  Solution_125 s;
+  bool x = s.isPalindrome("abaj");
+  cout << x << endl;
   // s.test();
   return 0;
 }
