@@ -46,3 +46,4 @@ Solutions are divided by problem category.
 
 ## String
 - 125 [Valid Palindrome](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_125.hpp)
+- 28* [Implement strStr()](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_28.hpp)
