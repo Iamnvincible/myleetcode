@@ -1,10 +1,10 @@
 #include <iostream>
-#include "String\Solution_125.hpp"
+#include "String\Solution_8.hpp"
 using namespace std;
 int main(int argc, char const* argv[]) {
-  Solution_125 s;
-  bool x = s.isPalindrome("abaj");
-  cout << x << endl;
+  Solution_8 s;
+  auto k = s.myAtoi("-2147483648");
+  cout << k << endl;
   // s.test();
   return 0;
 }
