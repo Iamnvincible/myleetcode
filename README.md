@@ -49,3 +49,4 @@ Solutions are divided by problem category.
 - 28* [Implement strStr()](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_28.hpp)
 - 8 [String to Integer (atoi)](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_8.hpp)
 - 67 [Add Binary](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_67.hpp)
+- 5 [Longest Palindromic Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_5.hpp)
