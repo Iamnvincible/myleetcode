@@ -1,5 +1,26 @@
 #ifndef SOLUTION_10
 #define SOLUTION_10
+
+/* 
+Given an input string (s) and a pattern (p),
+implement regular expression matching with support for '.' and '*'.
+
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
+
+Note:
+
+s could be empty and contains only lowercase letters a-z.
+p could be empty and contains only lowercase letters a-z, and characters like . or *.
+
+实现一个包括了.和*的正则表达式
+递归法和动态规划法
+
+动态规划画出一个表格
+字符串长度为col,匹配串长度为row
+表格大小col+1 * row +1
+ */
 #include <string>
 #include <vector>
 /*
@@ -13,13 +34,17 @@
 
 - 返回调用递归函数匹配s和去掉前两个字符的p的结果
  */
-class Solution_10 {
- public:
-  bool isMatch(std::string s, std::string p) {
+class Solution_10
+{
+public:
+  bool isMatch(std::string s, std::string p)
+  {
     //模式串为空的情况
-    if (p.empty()) return s.empty();
+    if (p.empty())
+      return s.empty();
     //第二个模式为*的情况
-    if (p.size() > 1 && p[1] == '*') {
+    if (p.size() > 1 && p[1] == '*')
+    {
       //情况1：*匹配0次 能匹配成功
       //情况2：s不为空 且 至少匹配了1次 且
       //去掉一个匹配到的字符后--->依然匹配成功
@@ -40,28 +65,68 @@ class Solution_10 {
     //第一个字符匹配成功且
     //去掉一个字符和模式后依然匹配成功
     //条件下匹配成功
-    else {
+    else
+    {
       return !s.empty() && (s[0] == p[0] || p[0] == '.') &&
              isMatch(s.substr(1), p.substr(1));
     }
   }
 };
-class Solution_10_bak {
- public:
-  bool isMatch(std::string s, std::string p) {
-    int m = s.length(), n = p.length();
-    std::vector<std::vector<bool> > dp(m + 1, std::vector<bool>(n + 1, false));
+
+class Solution_10_bak
+{
+public:
+  bool isMatch(std::string s, std::string p)
+  {
+    int row = p.size();
+    int col = s.size();
+    std::vector<std::vector<bool>> dp(row + 1, std::vector<bool>(col + 1, false));
     dp[0][0] = true;
-    for (int i = 0; i <= m; i++)
-      for (int j = 1; j <= n; j++)
+    //第一行剩余元素全部变为false，因为pattern如果是空串，那么只要s不是空串，都不能匹配
+    for (int i = 1; i <= col; i++)
+    {
+      dp[0][i] = false;
+    }
+    //初始化第0列，此时s是空串，所以只能是x*y*这种形式的
+    //注意，j-1代表的真实的p的索引
+    for (int j = 1; j <= row; j++)
+    {
+      //1.只有一个字符来匹配空肯定是false
+      //2.当前匹配模式为*才有可能是x*y*这种形式
+      //3.并且上上一行匹配成功（也是*才能成功吧 =='*'
+      dp[j][0] = (j > 1) && p[j - 1] == '*' && dp[j - 2][0];
+    }
+    //每次pattern字符串往下走一个字符，和所有的目标字符串子串进行匹配。
+    for (int i = 1; i <= col; i++)
+    {
+      //此时子字符串是s的前i个字符
+      //判断是否成功匹配
+      //1.当前模式为*，
+      //情况1：
+      //'*'代表空串，即0次复制
+      //dp[j-2][i] = 1
+
+      //情况2：
+      //'*'表示对前一个字符的若干次复制。
+      //dp[j][i-1] = 1 表示前一列的j行为true，即*匹配次数少一次时成功匹配
+      //且 pattern字符串j-2位置的字符和目标字符串i-1位置的字符相同
+      //(因为0位置表示了空串，所以数组中i位置代表的是字符串中的i-1位置)
+      //或者pattern字符串j-2位置的字符为'.',
+
+      //2.当前模式不为*，只需要判断是否是'.'或相同字符 且前面匹配成功即dp[j-1][i-1]为true
+      for (int j = 1; j <= row; j++)
+      {
         if (p[j - 1] == '*')
-          dp[i][j] = dp[i][j - 2] ||
-                     (i > 0 && (s[i - 1] == p[j - 2] || p[j - 2] == '.') &&
-                      dp[i - 1][j]);
+        {
+          dp[j][i] = (dp[j - 2][i]) || (dp[j][i - 1] && (p[j - 2] == s[i - 1] || p[j - 2] == '.'));
+        }
         else
-          dp[i][j] = i > 0 && dp[i - 1][j - 1] &&
-                     (s[i - 1] == p[j - 1] || p[j - 1] == '.');
-    return dp[m][n];
+        {
+          dp[j][i] = (p[j - 1] == '.' || p[j - 1] == s[i - 1]) && dp[j - 1][i - 1];
+        }
+      }
+    }
+    return dp[row][col];
   }
 };
 #endif
