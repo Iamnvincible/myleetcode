@@ -51,3 +51,4 @@ Solutions are divided by problem category.
 - 67 [Add Binary](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_67.hpp)
 - 5 [Longest Palindromic Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_5.hpp)
 - 10 [Regular Expression Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_10.hpp)
+- 44 [Wildcard Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_44.hpp)
