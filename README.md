@@ -52,3 +52,4 @@ Solutions are divided by problem category.
 - 5 [Longest Palindromic Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_5.hpp)
 - 10 [Regular Expression Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_10.hpp)
 - 44 [Wildcard Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_44.hpp)
+- 14 [Longest Common Prefix](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_14.hpp)
