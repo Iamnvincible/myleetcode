@@ -53,3 +53,4 @@ Solutions are divided by problem category.
 - 10 [Regular Expression Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_10.hpp)
 - 44 [Wildcard Matching](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_44.hpp)
 - 14 [Longest Common Prefix](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_14.hpp)
+- 65 [Valid Number](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_65.hpp)
