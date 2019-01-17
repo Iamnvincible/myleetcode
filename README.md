@@ -57,3 +57,4 @@ Solutions are divided by problem category.
 - 12 [Integer to Roman](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_12.hpp)
 - 13 [Roman to Integer](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_13.hpp)
 - 38 [Count and Say](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_18.hpp)
+- 49 [Group Anagrams](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_49.hpp)
