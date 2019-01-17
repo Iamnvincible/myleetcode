@@ -56,3 +56,4 @@ Solutions are divided by problem category.
 - 65 [Valid Number](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_65.hpp)
 - 12 [Integer to Roman](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_12.hpp)
 - 13 [Roman to Integer](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_13.hpp)
+- 38 [Count and Say](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_18.hpp)
