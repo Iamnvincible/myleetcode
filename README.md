@@ -55,3 +55,4 @@ Solutions are divided by problem category.
 - 14 [Longest Common Prefix](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_14.hpp)
 - 65 [Valid Number](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_65.hpp)
 - 12 [Integer to Roman](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_12.hpp)
+- 13 [Roman to Integer](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_13.hpp)
