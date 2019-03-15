@@ -3,6 +3,7 @@ My solutions for LeetCode problems.
 Solutions are divided by problem category.
 
 ## Array
+
 - 26 [RemoveDuplicatesfromSortedArray](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_26.h)
 - 80 [RemoveDuplicatesfromSortedArray II](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_80.h)
 - 33 [Search in Rotated Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_33.h)
@@ -29,6 +30,7 @@ Solutions are divided by problem category.
 - 137 [Single Number II](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_137.hpp)
 
 ## Linked List
+
 - 2 [Add Two Numbers](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.hpp) and [C version](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.h)
 - 92 [Reverse Linked List II](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_92.hpp)
 - 86 [Partition List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_86.hpp)
@@ -45,8 +47,9 @@ Solutions are divided by problem category.
 - 146 [LRU Cache](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_146.hpp)
 
 ## String
+
 - 125 [Valid Palindrome](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_125.hpp)
-- 28* [Implement strStr()](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_28.hpp)
+- 28\* [Implement strStr()](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_28.hpp)
 - 8 [String to Integer (atoi)](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_8.hpp)
 - 67 [Add Binary](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_67.hpp)
 - 5 [Longest Palindromic Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_5.hpp)
@@ -58,3 +61,4 @@ Solutions are divided by problem category.
 - 13 [Roman to Integer](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_13.hpp)
 - 38 [Count and Say](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_18.hpp)
 - 49 [Group Anagrams](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_49.hpp)
+- 71 [Simplify Path](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_71.hpp)

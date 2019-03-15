@@ -1,9 +1,5 @@
 #include <iostream>
 #include <string>
-#include "Array\MoveArray.hpp"
+#include "String/Solution_71.hpp"
 using namespace std;
-int main(int argc, char const *argv[]) {
-  AMove s;
-  s.test();
-  return 0;
-}
+int main(int argc, char const *argv[]) { return 0; }
