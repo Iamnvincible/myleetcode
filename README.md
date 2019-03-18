@@ -62,3 +62,4 @@ Solutions are divided by problem category.
 - 38 [Count and Say](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_18.hpp)
 - 49 [Group Anagrams](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_49.hpp)
 - 71 [Simplify Path](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_71.hpp)
+- 58 [Length of Last Word](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_58.hpp)
