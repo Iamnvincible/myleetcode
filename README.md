@@ -67,3 +67,4 @@ Solutions are divided by problem category.
 ## Stack and Queue
 
 - 20 [Valid Parentheses](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_20.hpp)
+- 32 [Longest Valid Parentheses](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_32.hpp)
