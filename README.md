@@ -68,3 +68,4 @@ Solutions are divided by problem category.
 
 - 20 [Valid Parentheses](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_20.hpp)
 - 32 [Longest Valid Parentheses](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_32.hpp)
+- 84 [Largest Rectangle in Histogram](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_84.hpp)
