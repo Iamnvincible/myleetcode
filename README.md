@@ -70,3 +70,7 @@ Solutions are divided by problem category.
 - 32 [Longest Valid Parentheses](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_32.hpp)
 - 84 [Largest Rectangle in Histogram](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_84.hpp)
 - 150 [Evaluate Reverse Polish Notation](https://github.com/Iamnvincible/myleetcode/blob/master/Stack_Queue/Solution_150.hpp)
+
+## Tree
+
+- 144 [Binary Tree Preorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_144.hpp)
