@@ -61,5 +61,5 @@
 *.out
 
 *.app
-.vscode/ipch/8b4e99326c9bd398/mmap_address.bin
-.vscode/ipch/1a1fd8f210159430/MAIN.ipch
+*.bin
+*.ipch

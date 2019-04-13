@@ -74,3 +74,4 @@ Solutions are divided by problem category.
 ## Tree
 
 - 144 [Binary Tree Preorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_144.hpp)
+- 94 [Binary Tree Inorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_94.hpp)
