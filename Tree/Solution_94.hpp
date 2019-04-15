@@ -32,16 +32,26 @@ class Solution_94_bak {
   std::vector<int> inorderTraversal(TreeNode *root) {
     std::vector<int> res;
     std::stack<TreeNode *> s;
+    //先将根节点入栈
     s.push(root);
+    //当栈非空且root不为空
     while (!s.empty() && root != nullptr) {
+      //读取栈顶元素并将其出栈
       auto top = s.top();
       s.pop();
+      //如果栈顶的左节点为空，说明左子树为空，可以读取top的值
+      //如果它的又节点不为空，将右节点入栈
       if (top->left == nullptr) {
         res.push_back(top->val);
         if (top->right != nullptr) {
           s.push(top->right);
         }
       } else {
+        //栈顶左节点不为空，左子树要先读取
+        //但是先考虑到右子树不为空时，先将右子树入栈
+        //再将top节点的*值
+        //入栈，temp是top的副本，左右子树为空，在下次遇到时能直接读取
+        //最后把左子树入栈，后进先出，满足左-中-右的中序遍历顺序
         if (top->right != nullptr) {
           s.push(top->right);
         }
