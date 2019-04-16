@@ -1,6 +1,5 @@
 #ifndef SOLUTION_145
 #define SOLUTION_145
-#include <functional>
 #include <stack>
 #include <vector>
 //节点结构体
@@ -144,6 +143,7 @@ class Solution_145_back3 {
   }
 
  private:
+  //将节点from 和 to的顺序倒置
   void reverse(TreeNode *from, TreeNode *to) {
     TreeNode *x = from, *y = from->right, *z;
     if (from == to) return;
@@ -154,8 +154,10 @@ class Solution_145_back3 {
       y = z;
     }
   }
+  //从from到to的逆序访问，即从to向上访问树的节点到from节点
   void visit_reverse(TreeNode *from, TreeNode *to, std::vector<int> &res) {
     TreeNode *p = to;
+    //先倒置
     reverse(from, to);
     while (true) {
       res.push_back(p->val);
@@ -164,6 +166,7 @@ class Solution_145_back3 {
       }
       p = p->right;
     }
+    //再倒置回来，保持原有树的结构
     reverse(to, from);
   }
 };
