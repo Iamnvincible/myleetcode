@@ -1,10 +1,9 @@
-#include <time.h>
 #include <iostream>
+#include "Tree/Solution_102.hpp"
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  time_t t = time(NULL);
-  cout << t << endl;
-  cout << "hello world" << endl;
+  Solution_102 s;
+  cout << "success build" << endl;
   return 0;
 }
