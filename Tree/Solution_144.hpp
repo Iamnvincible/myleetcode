@@ -2,7 +2,7 @@
 #define SOLUTION_144
 #include <stack>
 #include <vector>
-/* 二叉树遍历
+/* 二叉树先序遍历
 有递归，非递归两种
 其中非递归还有一种Morris Traversal可以实现O(1)空间 线性时间
  */
