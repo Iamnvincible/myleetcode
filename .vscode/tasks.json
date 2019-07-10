@@ -5,9 +5,9 @@
       "label": "Compile", // 任务名称，与launch.json的preLaunchTask相对应
       "command": "clang++", // 如果用MinGW，编译C用gcc，编译c++用g++
       "args": [
-        "${workspaceRoot}/main.cpp",
+        "main.cpp",
         "-o", // 指定输出文件名，不加该参数则默认输出a.exe
-        "${fileDirname}/main.exe",
+        "main.exe",
         "-O0",
         "-g", // 生成和调试有关的信息
         "-Wall", // 开启额外警告
@@ -27,18 +27,7 @@
         "focus": false,
         "panel": "shared" // 不同的文件的编译信息共享一个终端面板
       },
-      "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": ["relative", "/"],
-        "pattern": {
-          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$", // 正则表达式，用于描述在“问题”栏中显示的信息。
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5
-        }
-      } // 1.11.0的更新日志里说可以直接写"problemMatcher": "$gcc"，但是我试了一下不行。
+      "problemMatcher": "$gcc"
     }
   ]
 }
