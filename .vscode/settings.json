@@ -35,6 +35,7 @@
         "deque": "cpp",
         "optional": "cpp",
         "string_view": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "algorithm": "cpp"
     },
 }
