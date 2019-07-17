@@ -3,14 +3,8 @@
 #include <algorithm>
 #include <queue>
 #include <vector>
+#include "TreeNode.h"
 //二叉树之字形遍历
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 class Solution_103 {
  public:
   std::vector<std::vector<int>> zigzagLevelOrder(TreeNode *root) {

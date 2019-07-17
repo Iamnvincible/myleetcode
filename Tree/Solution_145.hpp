@@ -2,14 +2,8 @@
 #define SOLUTION_145
 #include <stack>
 #include <vector>
+#include "TreeNode.h"
 //二叉树后序遍历
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 class Solution_145 {
  public:
   std::vector<int> postorderTraversal(TreeNode *root) {

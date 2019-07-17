@@ -1,8 +1,15 @@
 #include <iostream>
-#include "Tree/Solution_107.hpp"
+#include <vector>
+#include "Tree/Solution_99.hpp"
 using namespace std;
-
+void print(vector<int> v) {
+  for (auto i : v) {
+    cout << i << ",";
+  }
+  cout << endl;
+}
 int main(int argc, char const *argv[]) {
-  cout << "success build" << endl;
+  Solution_99_back b;
+  b.test();
   return 0;
 }

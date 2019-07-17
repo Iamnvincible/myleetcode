@@ -3,15 +3,9 @@
 #include <algorithm>
 #include <queue>
 #include <vector>
+#include "TreeNode.h"
 //二叉树层序遍历2,是102题的倒序，即从二叉树底部往根
 //将102的结果逆序一下即可
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 
 class Solution_107 {
  public:

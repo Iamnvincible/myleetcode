@@ -2,14 +2,8 @@
 #define SOLUTION_102
 #include <queue>
 #include <vector>
+#include "TreeNode.h"
 //二叉树层序遍历
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 class Solution_102 {
  public:
   std::vector<std::vector<int>> levelOrder(TreeNode *root) {

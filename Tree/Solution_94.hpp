@@ -2,14 +2,8 @@
 #define SOLUTION_94
 #include <stack>
 #include <vector>
+#include "TreeNode.h"
 //二叉树中序遍历
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 class Solution_94 {
  public:
   std::vector<int> inorderTraversal(TreeNode *root) {

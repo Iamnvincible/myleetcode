@@ -2,18 +2,12 @@
 #define SOLUTION_144
 #include <stack>
 #include <vector>
+#include "TreeNode.h"
 /* 二叉树先序遍历
 有递归，非递归两种
 其中非递归还有一种Morris Traversal可以实现O(1)空间 线性时间
  */
 
-//节点结构体
-struct TreeNode {
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
 //递归
 //先得到当前节点值，再遍历左右子树
 class Solution_144 {
