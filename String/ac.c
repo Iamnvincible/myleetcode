@@ -15,7 +15,7 @@ Jay Lin
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-const int word = 26;  //英文字母数
+#define word 26  //英文字母数
 struct Node {
   struct Node* fail;        //失配指针
   struct Node* next[word];  //后继指针，最多26个，没有的为NULL
@@ -106,7 +106,7 @@ root:构建好的模式串Trie树
 paterns:模式串数组
 
 返回值：成功匹配到的模式串数量
- */
+*/
 int query(char* string, struct Node* root, char** patterns) {
   int i = 0;
   int ans = 0;
