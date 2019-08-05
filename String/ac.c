@@ -164,9 +164,20 @@ int query(char* string, struct Node* root, char** patterns) {
         //应该记录一下循环开始时的节点位置
       }
       temp = flag;
-      //可能找到字串，但字串不是终止字符 temp!=root temp!=NULL temp->count==0
-      if (temp != root && temp != NULL) {
-        p = temp;
+      p = flag;
+      //可能找到字串，但字串不是终止字符 temp!=root temp!=NULL temp->count==-1
+      //也要尝试失配指针，直到找到root节点
+      if (temp != root && temp != NULL && temp->count == -1) {
+        struct Node* flag_2 = temp;
+        while (temp != root) {
+          if (temp->count >= 0) {
+            printf("Found target pattern at position[%d],pattern [%s]\n", i,
+                   patterns[temp->count]);
+            ans++;
+          }
+          temp = temp->fail;
+        }
+        p = flag_2;
       }
       //下标后移
       i++;
