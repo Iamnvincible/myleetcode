@@ -15,10 +15,10 @@ Jay Lin
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define word 26  //英文字母数
+#define WORD 26  //英文字母数
 struct Node {
   struct Node* fail;        //失配指针
-  struct Node* next[word];  //后继指针，最多26个，没有的为NULL
+  struct Node* next[WORD];  //后继指针，最多26个，没有的为NULL
   int count;  //记录节点是否是字符串的结尾字符，-1为默认值，其他非负值作为模式串下标
 };
 struct Node* Queue[50000];  //简易队列
@@ -34,23 +34,21 @@ void insert(char* string, struct Node* root, int index) {
   int i = 0;
   while (string[i]) {
     if (isalpha(string[i])) {
-      char c = tolower(string[i]);
-      int index = c - 'a';
+      int index = tolower(string[i]) - 'a';
       //如果还没有这个字母节点
       if (p->next[index] == NULL) {
         //分配新节点
         p->next[index] = (struct Node*)malloc(sizeof(struct Node));
-        memset(p->next[index]->next, 0, sizeof(&root) * word);
+        memset(p->next[index]->next, 0, sizeof(&root) * WORD);
         p->next[index]->count = -1;
         p->next[index]->fail = NULL;
       }
       //创造节点之后就可以赋值了
       p = p->next[index];
-      i++;
     }
+    i++;
   }
   //记录这个节点为字符串的结尾字符
-  // count>0就可以了
   p->count = index;
 }
 /*
@@ -71,7 +69,7 @@ void build_fail(struct Node* root) {
     // f作为父节点的失配指针
     struct Node* f = temp->fail;
     //遍历所有子节点指针，找到非空的子节点
-    for (size_t i = 0; i < word; i++) {
+    for (size_t i = 0; i < WORD; i++) {
       if (temp->next[i]) {
         //广度优先遍历，将子节点入队列
         // printf("in queue num = %d:%c\n", tail, i + 'a');
@@ -85,12 +83,14 @@ void build_fail(struct Node* root) {
           //尝试将新字符加入
           //如果加入失败，则继续找失配节点的失配节点
           while (f->next[i] == NULL) {
+            //在回到根节点时终止
             if (f == root) {
               temp->next[i]->fail = root;
               break;
             }
             f = f->fail;
           }
+          //如果加入成功，则将当前节点的失配指针指向f->next[i]
           if (f->next[i]) {
             temp->next[i]->fail = f->next[i];
           }
@@ -106,16 +106,15 @@ root:构建好的模式串Trie树
 paterns:模式串数组
 
 返回值：成功匹配到的模式串数量
-*/
+ */
 int query(char* string, struct Node* root, char** patterns) {
   int i = 0;
   int ans = 0;
   struct Node* p = root;
   while (string[i]) {
     if (isalpha(string[i])) {
-      char c = tolower(string[i]);
       //获得下标
-      int index = c - 'a';
+      int index = tolower(string[i]) - 'a';
       struct Node* temp = NULL;
       //尝试通过下标访问字符节点
       //两种情况
@@ -130,7 +129,7 @@ int query(char* string, struct Node* root, char** patterns) {
       //另外要注意：
       //状态转移后的状态前缀可能和当前所处字符的后缀相符
       //同时该前缀是一个字符串的结尾（一个匹配成功状态）
-      // p->fail!=root && p->fail->count>0
+      // p->fail!=root && p->fail->count>=0
       //这种情况应该比下面尝试转移到失败指针后一个节点的情况的优先
       //但是这种情况其实包含再下面情况2中，在匹配成功一个字符串时会去检查失配指针
       //只要记录了匹配成功时的指针，在循环检查失配指针完成后
@@ -148,37 +147,22 @@ int query(char* string, struct Node* root, char** patterns) {
       if (temp == NULL) {
         temp = root;
       }
-
-      // 2. 匹配到了，且是一个模式串的终止字符处
-      // temp!=root,temp->count>0
-      struct Node* flag = temp;
-      while (temp != root && temp->count >= 0) {
-        // printf("count = %d index = %d\n", temp->count, index);
-        printf("Found target pattern at position[%d],pattern [%s]\n", i,
-               patterns[temp->count]);
-        ans++;
-        // temp->count = -1;
-        //在匹配到的情况下，再找以当前匹配成功字符串后缀为前缀的模式串
-        temp = temp->fail;
-        //此外，如果当前位置之后的一位也可以匹配
-        //应该记录一下循环开始时的节点位置
-      }
-      temp = flag;
-      p = flag;
-      //可能找到字串，但字串不是终止字符 temp!=root temp!=NULL temp->count==-1
-      //也要尝试失配指针，直到找到root节点
-      if (temp != root && temp != NULL && temp->count == -1) {
-        struct Node* flag_2 = temp;
-        while (temp != root) {
-          if (temp->count >= 0) {
-            printf("Found target pattern at position[%d],pattern [%s]\n", i,
-                   patterns[temp->count]);
-            ans++;
-          }
-          temp = temp->fail;
+      //如果匹配成功，p应当移到匹配成功后的节点，也就是temp
+      //如果匹配失败，p为root，上一步已经把temp置为root，赋值即可
+      p = temp;
+      //情况2
+      //匹配成功，此时判断这个节点是不是字符串结束位置，是则输出
+      //无论是不是字符串结束位置，都要递归尝试失配指针直到root节点
+      //找出该节点失配指针链中所有以该字符结尾的模式字符串
+      while (temp != root) {
+        if (temp->count >= 0) {
+          printf("Found target pattern at position[%d],pattern [%s]\n", i,
+                 patterns[temp->count]);
+          ans++;
         }
-        p = flag_2;
+        temp = temp->fail;
       }
+
       //下标后移
       i++;
     }
@@ -188,16 +172,16 @@ int query(char* string, struct Node* root, char** patterns) {
 
 int main(int argc, char const* argv[]) {
   //模式串，全部为小写字母
-  char* patterns[] = {"nihao", "hao", "hs", "hsr", "he", "ao", "h"};
+  char* patterns[] = {"a", "ab", "bab", "bc", "bca", "c", "caa"};
   //匹配串，全部为小写字母
-  char* s = "sdmfhsgnshejfgnihaofhsrnihao";
+  char* s = "abccab";
   // Trie树根节点
   struct Node root;
   //初始化
   root.count = -1;
   root.fail = NULL;
   int size = sizeof(patterns) / sizeof(char*);
-  memset(root.next, 0, sizeof(&root) * word);
+  memset(root.next, 0, sizeof(&root) * WORD);
   //向树中插入并构建模式串
   for (size_t i = 0; i < size; i++) {
     insert(patterns[i], &root, i);
