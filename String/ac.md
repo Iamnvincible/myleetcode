@@ -6,7 +6,7 @@ AC自动机：Aho-Corasick automation，一种多模式字符串匹配算法。�
 
 算法分为三个步骤：1.构建TRIE树 2.构建失配指针 3.查询
 
-Tried树定义如下：
+TRIE树定义如下：
 
 > **trie**，又称**前缀树**或**字典树**，是一种有序[树](https://zh.wikipedia.org/wiki/树_(数据结构))，用于保存[关联数组](https://zh.wikipedia.org/wiki/关联数组)，其中的键通常是[字符串](https://zh.wikipedia.org/wiki/字符串)。与[二叉查找树](https://zh.wikipedia.org/wiki/二叉查找树)不同，键不是直接保存在节点中，而是由节点在树中的位置决定。一个节点的所有子孙都有相同的[前缀](https://zh.wikipedia.org/wiki/前缀)，也就是这个节点对应的字符串，而根节点对应[空字符串](https://zh.wikipedia.org/wiki/空字符串)。一般情况下，不是所有的节点都有对应的值，只有叶子节点和部分内部节点所对应的键才有相关的值。
 
@@ -27,7 +27,7 @@ struct Node* Queue[50000];  //简易队列
 int head = 0, tail = 0;     //队列头尾标志
 ```
 
-![TRIE树](ac0.png)
+![TRIE树](ac1.png)
 
 为了简化问题，这里假定字符串均由小写英文字母组成，上图展示了一个简单的TRIE树，其中实心节点表示这是一个单词的结尾节点，空心节点不是一个单词结尾节点。这样，上图就表示了{`c`,`caa`,`bc`,`bca`,`bab`,`a`,`ab`}。
 
@@ -102,7 +102,7 @@ void insert(char* string, struct Node* root, int index) {
   - 如果最终$g(r,a)$退回根节点，因为根节点的失配节点就是其本身，所以节点$s$的失配跳转一定可以确定。
 - 采用广度优先遍历TRIE树，为每个节点找到失配指针
 
-![构建完失配指针](ac1.png)
+![构建完失配指针](ac0.png)
 
 
 
