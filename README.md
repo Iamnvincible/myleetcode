@@ -80,3 +80,7 @@ Solutions are divided by problem category.
 - 107 [Binary Tree Level Order Traversal II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_107.hpp)
 - 103 [Binary Tree Zigzag Level Order Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_103.hpp)
 - 99 [Recover Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_99.hpp)
+
+## Sort
+
+- 88 [Recover Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_88.hpp)
