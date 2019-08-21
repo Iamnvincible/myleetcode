@@ -84,3 +84,4 @@ Solutions are divided by problem category.
 ## Sort
 
 - 88 [Recover Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_88.hpp)
+- 21 [Merge Two Sorted Lists](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_21.hpp)
