@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "Tree/Solution_99.hpp"
+#include "Sort/Solution_147.hpp"
 using namespace std;
 void print(vector<int> v) {
   for (auto i : v) {
@@ -9,7 +9,7 @@ void print(vector<int> v) {
   cout << endl;
 }
 int main(int argc, char const *argv[]) {
-  Solution_99_back b;
+  Solution_147 b;
   b.test();
   return 0;
 }

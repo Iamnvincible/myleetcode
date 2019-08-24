@@ -83,6 +83,7 @@ Solutions are divided by problem category.
 
 ## Sort
 
-- 88 [Recover Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_88.hpp)
+- 88 [Merge Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_88.hpp)
 - 21 [Merge Two Sorted Lists](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_21.hpp)
 - 23 [Merge k Sorted Lists](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_23.hpp)
+- 147 [Insertion Sort List](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_147.hpp)
