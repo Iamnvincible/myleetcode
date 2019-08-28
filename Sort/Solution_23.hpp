@@ -1,5 +1,11 @@
 #ifndef SOLUTION_23
 #define SOLUTION_23
+/*
+Merge k sorted linked lists and return it as one sorted list. Analyze and
+describe its complexity.
+
+将k个有序链表合并，并获得一个有序链表返回
+ */
 #include <queue>
 #include <vector>
 struct ListNode {
