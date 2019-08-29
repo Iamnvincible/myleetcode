@@ -88,3 +88,4 @@ Solutions are divided by problem category.
 - 23 [Merge k Sorted Lists](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_23.hpp)
 - 147 [Insertion Sort List](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_147.hpp)
 - 148 [Sort List](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_148.hpp)
+- 41 [First Missing Positive](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_41.hpp)
