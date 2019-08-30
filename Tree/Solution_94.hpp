@@ -35,7 +35,7 @@ class Solution_94_bak {
       auto top = s.top();
       s.pop();
       //如果栈顶的左节点为空，说明左子树为空，可以读取top的值
-      //如果它的又节点不为空，将右节点入栈
+      //如果它的右节点不为空，将右节点入栈
       if (top->left == nullptr) {
         res.push_back(top->val);
         if (top->right != nullptr) {
