@@ -28,7 +28,8 @@ void trimRightTrailingSpaces(std::string& input) {
 input:字符串，格式为[1,2,3,4],用方括号代表的整数数组，以逗号为分隔符
 返回值:树的根节点
 思路：
-输入的字符串是以完全二叉树形式层序形式表示的二叉树
+输入的字符串是以一种特殊的层序遍历二叉树字符串，
+相比完全二叉树，当某一个子树为空时，用null表示空子树，更下层不存在的节点不必表示
 以层序输入就以层序构造二叉树，用队列实现
 注意保存根节点指针
  */
@@ -87,7 +88,9 @@ TreeNode* stringToTreeNode(std::string input) {
   return root;
 }
 /*
-层序遍历二叉树，输出结果到方括号数组中
+特殊的层序遍历二叉树，输出结果到方括号数组中
+正常层序遍历按层输出有值的节点的值
+而此函数输出时，对于某一子树为空时输出一次null，该子树下层的空节点不再输出
 root:二叉树根节点
  */
 std::string treeNodeToString(TreeNode* root) {
@@ -95,18 +98,22 @@ std::string treeNodeToString(TreeNode* root) {
     return "[]";
   }
 
-  std::string output = "";
-  std::queue<TreeNode*> q;
-  q.push(root);
+  std::string output = "";  //结果字符串，读取节点在后面附加字符
+  std::queue<TreeNode*> q;  //队列，用于层序遍历
+  q.push(root);             //初始情况，根节点入队
   while (!q.empty()) {
+    //读取队列头，并出队
     TreeNode* node = q.front();
     q.pop();
-    //对于空节点输出null
+    //先读取节点本身值
+    //再先后将左右子树指针入队，以满足层序遍历次序
+
+    //这是一种特殊的层序遍历
+    //如果某一子树为空，输出至多一次null
     if (node == nullptr) {
       output += "null, ";
       continue;
     }
-
     output += std::to_string(node->val) + ", ";
     q.push(node->left);
     q.push(node->right);
