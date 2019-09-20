@@ -144,4 +144,25 @@ class Solution_114_back_2 {
     }
   }
 };
+//不用栈的方法
+//一层一层处理
+//非常巧妙
+class Solution_114_back_3 {
+ public:
+  void flatten(TreeNode* root) {
+    auto cur = root;
+    while (cur) {
+      if (cur->left) {
+        auto p = cur->left;
+        while (p->right) {
+          p = p->right;
+        }
+        p->right = cur->right;
+        cur->right = cur->left;
+        cur->left = nullptr;
+      }
+      cur = cur->right;
+    }
+  }
+};
 #endif
