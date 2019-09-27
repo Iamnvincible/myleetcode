@@ -149,7 +149,7 @@ class Solution_117_back3 {
     while (root) {
       if (root->left) {
         cur->next = root->left;
-        cur = cur->next;  // cur往后走，保证cur时正需要赋值next指针的节点
+        cur = cur->next;  // cur往后走，保证cur是正需要赋值next指针的节点
       }
       if (root->right) {
         cur->next = root->right;

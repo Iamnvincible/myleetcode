@@ -85,6 +85,8 @@ Solutions are divided by problem category.
 - 110 [Balanced Binary Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_110.hpp)
 - 114 [Flatten Binary Tree to Linked List](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_114.hpp)
 - 117 [Populating Next Right Pointers in Each Node II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_117.hpp)
+- 105 [Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_105.hpp)
+- 106 [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_106.hpp)
 
 ## Sort
 
