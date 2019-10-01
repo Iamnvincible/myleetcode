@@ -44,7 +44,7 @@ class Solution_105 {
   }
 };
 //上面的方法对每个新的向量新建，消耗了大量空间
-//这种方法利用迭代器，减少先进向量，只记录指针位置
+//这种方法利用迭代器，减少创建向量，只记录指针位置
 class Solution_105_back {
  public:
   TreeNode* buildTree(std::vector<int>& preorder, std::vector<int>& inorder) {

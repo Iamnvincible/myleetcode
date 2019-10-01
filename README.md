@@ -87,6 +87,8 @@ Solutions are divided by problem category.
 - 117 [Populating Next Right Pointers in Each Node II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_117.hpp)
 - 105 [Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_105.hpp)
 - 106 [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_106.hpp)
+- 96 [Unique Binary Search Trees](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_96.hpp)
+- 95 [Unique Binary Search Trees II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_195.hpp)
 
 ## Sort
 
