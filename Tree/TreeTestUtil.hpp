@@ -65,7 +65,7 @@ TreeNode* stringToTreeNode(std::string input) {
     }
     //附到node的左子树
     trimLeftTrailingSpaces(item);
-    //当节点不为空时，向出栈节点左指针赋值
+    //当节点不为空时，向出队节点左指针赋值
     //当节点为空时，不需要赋值，因为new出来节点初始化时左右指针为空
     if (item != "null") {
       //初始化节点

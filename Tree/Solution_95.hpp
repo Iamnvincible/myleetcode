@@ -6,7 +6,7 @@ that store values 1 ... n.
 给出n个节点，返回所有可能的二叉查找树
  */
 #include <vector>
-#include "TreeNode.h"、
+#include "TreeNode.h"
 
 //先算出所有可能的数量
 // f数组表示了在若干个节点情况下可能的二叉搜索树个数
@@ -56,7 +56,7 @@ class Solution_95 {
     //求得在特定数量节点时，二叉搜索树的数量
     std::vector<TreeNode *> res(f[smaller.size()] * f[bigger.size()]);
     for (size_t j = 0; j < res.size(); j++) {
-      res[i] = new TreeNode(i);
+      res[j] = new TreeNode(i);
     }
     //生成左右子树
     std::vector<TreeNode *> left;
