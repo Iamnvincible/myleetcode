@@ -99,3 +99,7 @@ Solutions are divided by problem category.
 - 148 [Sort List](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_148.hpp)
 - 41 [First Missing Positive](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_41.hpp)
 - 75 [Sort Colors](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_75.hpp)
+
+## Math
+
+- 166 [Fraction to Recurring Decimal](https://github.com/Iamnvincible/myleetcode/blob/master/Math/Solution_166.hpp)
