@@ -90,7 +90,7 @@ class Solution_166 {
       quotient = remainder / divisor;
       remainder %= divisor;
     }
-    //余数为0且商不为-1，说明除尽
+    //余数为0,说明除尽
     if (!remainder) {
       //当一步就除尽时，商可能大于10，将商转换为字符串
       regular.append(std::to_string(quotient));
