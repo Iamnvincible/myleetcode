@@ -3,10 +3,10 @@
   "tasks": [
     {
       "label": "Compile Win clang++", // 任务名称，与launch.json的preLaunchTask相对应
-      "command": "clang++", // 如果用MinGW，编译C用gcc，编译c++用g++
+      "command": "clang++",
       "args": [
         "main.cpp",
-        "-o", // 指定输出文件名，不加该参数则默认输出a.exe
+        "-o",
         "main.exe",
         "-O0",
         "-g", // 生成和调试有关的信息
@@ -14,10 +14,10 @@
         "-static-libgcc", // 静态链接
         "-fcolor-diagnostics",
         "--target=x86_64-w64-mingw", // 默认target为msvc，不加这一条就会找不到头文件
-        "-std=c++1z" // c++1z即c++17，C语言最新标准为c11，或根据自己的需要进行修改
+        "-std=c++11" // c++1z即c++17，C语言最新标准为c11，或根据自己的需要进行修改
       ], // 编译命令参数
       "type": "shell",
-      "group":"build",
+      "group": "build",
       "presentation": {
         "echo": true,
         "reveal": "silent", // 设置是否在“终端”中显示编译信息，可以为always，silent，never。一些错误提示也在这里，但是因为有静态检测，我就设为silent了。
@@ -37,10 +37,10 @@
         "-g", // 生成和调试有关的信息
         "-Wall", // 开启额外警告
         "-static-libgcc", // 静态链接
-        "-std=c++1z" // c++1z即c++17，C语言最新标准为c11，或根据自己的需要进行修改
+        "-std=c++11" // c++1z即c++17，C语言最新标准为c11，或根据自己的需要进行修改
       ], // 编译命令参数
       "type": "shell",
-      "group":"build",
+      "group": "build",
       "presentation": {
         "echo": true,
         "reveal": "silent", // 设置是否在“终端”中显示编译信息，可以为always，silent，never。一些错误提示也在这里，但是因为有静态检测，我就设为silent了。
