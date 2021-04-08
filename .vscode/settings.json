@@ -44,20 +44,5 @@
         "memory_resource": "cpp",
         "set": "cpp",
         "string": "cpp"
-    },
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#461752",
-        "activityBar.foreground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#7c6a23",
-        "activityBarBadge.foreground": "#e7e7e7",
-        "titleBar.activeBackground": "#240c2a",
-        "titleBar.inactiveBackground": "#240c2a99",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveForeground": "#e7e7e799",
-        "statusBar.background": "#240c2a",
-        "statusBarItem.hoverBackground": "#461752",
-        "statusBar.foreground": "#e7e7e7"
-    },
-    "peacock.color": "#240c2a",
+    }
 }

@@ -10,7 +10,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "g++",
+            "compilerPath": "C:/Users/jie/home/LLVM/MinGW/mingw64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++11",
             "intelliSenseMode": "gcc-x64"
@@ -55,10 +55,10 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "clang",
+            "compilerPath": "C:/Users/jie/home/LLVM/bin/clang.exe",
             "cStandard": "c11",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x64"
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
