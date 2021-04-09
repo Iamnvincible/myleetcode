@@ -100,6 +100,10 @@ Solutions are divided by problem category.
 - 41 [First Missing Positive](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_41.hpp)
 - 75 [Sort Colors](https://github.com/Iamnvincible/myleetcode/blob/master/Sort/Solution_75.hpp)
 
+## Search
+- 34 [Find First and Last Position of Element in Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
+- 35 [Search Insert Position](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_35.hpp)
+
 ## Math
 
 - 166 [Fraction to Recurring Decimal](https://github.com/Iamnvincible/myleetcode/blob/master/Math/Solution_166.hpp)
