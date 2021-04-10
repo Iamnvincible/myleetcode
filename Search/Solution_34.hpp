@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-04-08 21:14:29
- * @LastEditTime: 2021-04-09 22:30:52
+ * @LastEditTime: 2021-04-10 20:46:59
  * @LastEditors: Jie Lin
  * @Description:leetcode 34
  * @FilePath: \myleetcode\Search\Solution_34.hpp
@@ -20,53 +20,33 @@
 /***
  * 在有序数组中查找特定元素，使用二分查找，复杂度为log(n)
  * 由于数组中可能会有重复元素，找到后再在目标下标前后搜寻边界
+ * 或者，改进二分查找，使之找到的是第一个不大于目标元素的位置，再找第一个大于目标元素的位置，两个位置之间就是等于目标元素的位置范围
  */
 class Solution_34 {
  public:
   std::vector<int> searchRange(std::vector<int>& nums, int target) {
-    std::vector<int> res{-1, -1};
-    int size = nums.size();
-    if (size == 0) {
-      return res;
+    int pos1 = searchFisrtNotLarger(nums, target);
+    if (pos1 == nums.size() || nums[pos1] != target) {
+      return {-1, -1};
     }
-    int got = 0;
+    int pos2 = searchFisrtNotLarger(nums, target + 1) - 1;
+    return {pos1, pos2};
+  }
+
+ private:
+  int searchFisrtNotLarger(std::vector<int>& nums, int target) {
     int start = 0;
-    int end = size - 1;
-    int pos = end / 2;
-    int pre = -1;
+    int end = nums.size() - 1;
     while (start <= end) {
-      pre = pos;
-      if (nums[pos] > target) {
+      int pos = start + (end - start) / 2;
+      int value = nums[pos];
+      if (value >= target) {
         end = pos - 1;
-        pos = start + (end - start) / 2;
-      } else if (nums[pos] < target) {
+      } else {
         start = pos + 1;
-        pos = start + (end - start) / 2;
-      } else {
-        got = 1;
-        break;
       }
     }
-    if (!got) {
-      return res;
-    }
-    while (pos <= end) {
-      if (nums[pos] == target) {
-        pos++;
-      } else {
-        break;
-      }
-    }
-    res[1] = pos - 1;
-    while (pre >= start) {
-      if (nums[pre] == target) {
-        pre--;
-      } else {
-        break;
-      }
-    }
-    res[0] = pre + 1;
-    return res;
+    return start;
   }
 };
 #include <algorithm>

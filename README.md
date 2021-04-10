@@ -103,6 +103,7 @@ Solutions are divided by problem category.
 ## Search
 - 34 [Find First and Last Position of Element in Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
 - 35 [Search Insert Position](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_35.hpp)
+- 74 [Search a 2D Matrix](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_74.hpp)
 
 ## Math
 
