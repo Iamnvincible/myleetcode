@@ -1,9 +1,9 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-04-08 21:14:29
- * @LastEditTime: 2021-04-10 20:46:59
+ * @LastEditTime: 2021-04-14 21:42:58
  * @LastEditors: Jie Lin
- * @Description:leetcode 34
+ * @Description:Solution 34
  * @FilePath: \myleetcode\Search\Solution_34.hpp
  *
  */
