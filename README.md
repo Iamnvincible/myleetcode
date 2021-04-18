@@ -108,6 +108,9 @@ Solutions are divided by problem category.
 
 ## Enum
 - 78 [Subsets](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_78.hpp)
+- 90 [Subsets II](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_90.hpp)
+- 46 [Permutations](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_46.hpp)
+- 47 [Permutations II](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_47.hpp)
 
 ## Math
 

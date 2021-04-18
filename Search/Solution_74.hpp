@@ -1,12 +1,14 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-04-10 19:18:03
- * @LastEditTime: 2021-04-10 19:47:53
+ * @LastEditTime: 2021-04-17 20:59:12
  * @LastEditors: Jie Lin
  * @Description:Solution 74
  * @FilePath: \myleetcode\Search\Solution_74.hpp
  *
  */
+#ifndef SOLUTION_74
+#define SOLUTION_74
 /**
  * @brief  在矩阵里找目标元素
  * @note
@@ -52,3 +54,4 @@ class Solution_74 {
     return false;
   }
 };
+#endif

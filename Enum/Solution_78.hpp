@@ -1,13 +1,14 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-04-11 12:00:44
- * @LastEditTime: 2021-04-13 22:04:48
+ * @LastEditTime: 2021-04-17 21:00:13
  * @LastEditors: Jie Lin
  * @Description:Solution 78
  * @FilePath: \myleetcode\Enum\Solution_78.hpp
  *
  */
-
+#ifndef SOLLUTION_78
+#define SOLLUTION_78
 /**
  *求集合的子集，集合数量为n，子集数量为2^n
  *
@@ -69,6 +70,5 @@ class Solution_78_3 {
     }
     return res;
   }
-
- private:
 };
+#endif
