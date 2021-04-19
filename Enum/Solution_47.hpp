@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-04-18 17:58:40
- * @LastEditTime: 2021-04-18 19:02:21
+ * @LastEditTime: 2021-04-19 21:30:31
  * @LastEditors: Jie Lin
  * @Description:Solution 47
  * @FilePath: \myleetcode\Enum\Solution_47.hpp
@@ -13,7 +13,7 @@
 #include <vector>
 class Solution_47 {
  public:
-  vector<vector<int>> permuteUnique(std::vector<int>& nums) {
+  std::vector<std::vector<int>> permuteUnique(std::vector<int>& nums) {
     std::vector<std::vector<int>> res;
     std::vector<int> fix(nums.size(), -11);
     std::unordered_map<int, std::vector<int>> occ;

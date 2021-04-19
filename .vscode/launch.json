@@ -35,7 +35,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "D:/LLVM/bin/gdb.exe",
+            "miDebuggerPath": "C:\\Users\\jie\\home\\LLVM\\MinGW\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -43,7 +43,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "Compile Win clang++"
+            "preLaunchTask": "Compile MinGW g++"
         }
     ]
 }
