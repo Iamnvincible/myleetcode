@@ -5,7 +5,7 @@
 
 // #include "Tree/Solution_95.hpp"
 // #include "Tree/TreeTestUtil.hpp"
-#include "Enum/Solution_77.hpp"
+#include "Enum/Solution_17.hpp"
 using namespace std;
 using namespace chrono;
 
@@ -13,13 +13,10 @@ int main(int argc, char const *argv[]) {
   auto start = system_clock::now();
   // start
   // code below>3
-  Solution_77 s;
-  auto res = s.combine(10, 3);
+  Solution_17 s;
+  auto res = s.letterCombinations("2");
   for (auto &&i : res) {
-    for (auto &&j : i) {
-      cout << j << " ";
-    }
-    cout << endl;
+    cout << i << endl;
   }
 
   // stop
