@@ -112,8 +112,16 @@ Solutions are divided by problem category.
 - 46 [Permutations](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_46.hpp)
 - 47 [Permutations II](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_47.hpp)
 - 77 [Combinations](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_77.hpp)
-- 17 [Combinations](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_17.hpp)
+- 17 [Letter Combinations of a Phone Number](https://github.com/Iamnvincible/myleetcode/blob/master/Enum/Solution_17.hpp)
+
+## BFS
+- 127 [Word Ladder](https://github.com/Iamnvincible/myleetcode/blob/master/BFS/Solution_127.hpp)
+
+## Gready
+- 55 [Word Ladder](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_55.hpp)
+
 
 ## Math
 
 - 166 [Fraction to Recurring Decimal](https://github.com/Iamnvincible/myleetcode/blob/master/Math/Solution_166.hpp)
+
