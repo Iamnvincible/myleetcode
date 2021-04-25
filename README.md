@@ -118,7 +118,8 @@ Solutions are divided by problem category.
 - 127 [Word Ladder](https://github.com/Iamnvincible/myleetcode/blob/master/BFS/Solution_127.hpp)
 
 ## Gready
-- 55 [Word Ladder](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_55.hpp)
+- 55 [Jump Game](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_55.hpp)
+- 45 [Jump Game II](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_45.hpp)
 
 
 ## Math
