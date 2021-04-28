@@ -122,6 +122,7 @@ Solutions are divided by problem category.
 - 45 [Jump Game II](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_45.hpp)
 - 121 [Best Time to Buy and Sell Stock](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_121.hpp)
 - 122 [Best Time to Buy and Sell Stock II](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_122.hpp)
+- 122 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_3.hpp)
 
 
 ## Math

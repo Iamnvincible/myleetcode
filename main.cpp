@@ -1,29 +1,28 @@
+#include <algorithm>
 #include <chrono>
 #include <iostream>
 #include <string>
 #include <vector>
-
 // #include "Tree/Solution_95.hpp"
 // #include "Tree/TreeTestUtil.hpp"
-#include "Enum/Solution_17.hpp"
+#include "Gready/Solution_3.hpp"
 using namespace std;
 using namespace chrono;
 
 int main(int argc, char const *argv[]) {
-  auto start = system_clock::now();
+  auto _start_clock = system_clock::now();
   // start
   // code below>3
-  Solution_17 s;
-  auto res = s.letterCombinations("2");
-  for (auto &&i : res) {
-    cout << i << endl;
-  }
-
+  string str = "abcabcbb";
+  Solution_3 s;
+  int res = s.lengthOfLongestSubstring(str);
+  cout << res << endl;
   // stop
-  auto end = system_clock::now();
-  auto duration = duration_cast<microseconds>(end - start);
+  // DONT code below
+  auto _stop_clock = system_clock::now();
+  auto _duration_time = duration_cast<microseconds>(_stop_clock - _start_clock);
   cout << "costs "
-       << double(duration.count()) * microseconds::period::num /
+       << double(_duration_time.count()) * microseconds::period::num /
               microseconds::period::den
        << " second(s)" << endl;
   return 0;
