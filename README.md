@@ -125,8 +125,12 @@ Solutions are divided by problem category.
 - 122 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_3.hpp)
 - 11 [Container With Most Water](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_11.hpp)
 
+## DP
+- 120 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_120.hpp)
 
 ## Math
 
 - 166 [Fraction to Recurring Decimal](https://github.com/Iamnvincible/myleetcode/blob/master/Math/Solution_166.hpp)
+
+
 

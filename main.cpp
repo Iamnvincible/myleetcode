@@ -5,7 +5,7 @@
 #include <vector>
 // #include "Tree/Solution_95.hpp"
 // #include "Tree/TreeTestUtil.hpp"
-#include "Gready/Solution_3.hpp"
+#include "DP/Solution_120.hpp"
 using namespace std;
 using namespace chrono;
 
@@ -13,9 +13,10 @@ int main(int argc, char const *argv[]) {
   auto _start_clock = system_clock::now();
   // start
   // code below>3
-  string str = "abcabcbb";
-  Solution_3 s;
-  int res = s.lengthOfLongestSubstring(str);
+  Solution_120_2 s;
+  // vector<vector<int>> array = {{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}};
+  vector<vector<int>> array = {{-10}};
+  int res = s.minimumTotal(array);
   cout << res << endl;
   // stop
   // DONT code below
