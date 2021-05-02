@@ -127,6 +127,7 @@ Solutions are divided by problem category.
 
 ## DP
 - 120 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_120.hpp)
+- 53 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_53.hpp)
 
 ## Math
 
