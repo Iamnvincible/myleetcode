@@ -127,7 +127,9 @@ Solutions are divided by problem category.
 
 ## DP
 - 120 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_120.hpp)
-- 53 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_53.hpp)
+- 53 [Maximum Subarray](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_53.hpp)
+- 647 [Palindromic Substrings](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_647.hpp)
+- 132 [Palindrome Partitioning II](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_132.hpp)
 
 ## Math
 
