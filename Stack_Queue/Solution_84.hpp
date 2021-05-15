@@ -38,7 +38,7 @@ class Solution_84 {
 保留这个较小高度的位置，
 计算最高直方与当前遇到直方之前所有直方可以围成的矩形的面积，
 每计算一次矩形面积时，将栈顶元素出栈，表示用来构成矩形用到的最远的直方
-如果这个较小位置任然比栈顶元素低，继续出栈，
+如果这个较小位置仍然比栈顶元素低，继续出栈，
 计算这次出栈元素到较小位置之间能构成的矩形的面积。
 依次类推，直到这个较小高度比栈顶元素高后入栈，
 对于高度小的直方，能够依靠其他比它高的直方（这些比它高的直方之间不能有比它低的直方隔开）来构造尽可能大的矩形
@@ -50,22 +50,22 @@ class Solution_84 {
 class Solution_84_bak {
  public:
   int largestRectangleArea(std::vector<int>& heights) {
-    std::stack<int> s;
+    std::stack<int> s;  //记录较高直方位置的栈
+    int result = 0;     //记录最大面积
     heights.push_back(0);
-    int result = 0;
     int i = 0;
     while (i < heights.size()) {
-      //如果直方高度比栈顶元素大则入栈
+      //如果遇到的直方高度大于栈顶元素，将此直方入栈
       if (s.empty() || heights[i] > heights[s.top()]) {
         s.push(i++);
       } else {
-        //直方高度不大于栈顶元素，出栈
-        //出栈后如果栈为空，计算较高高度和当前位置之间矩形面积
+        //如果遇到的直方高度不大于栈顶元素，出栈
+        int high = s.top();  //记录栈顶元素（也是当前栈中最高直方的位置）
+        s.pop();  //出栈当前最高元素
+        //出栈后，如果栈为空，计算较高高度和当前位置之间矩形面积
         //如果栈不为空，以当前栈顶高度*到当前遍历位置获得矩形面积，直到i位置不再是最低位置
-        int tmp = s.top();  //记录栈顶元素
-        s.pop();            //出栈当前最高元素
         result =
-            std::max(result, heights[tmp] * (s.empty() ? i : i - s.top() - 1));
+            std::max(result, heights[high] * (s.empty() ? i : i - s.top() - 1));
         //注意i没有+=1
       }
     }

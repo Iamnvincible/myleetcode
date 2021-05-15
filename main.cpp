@@ -5,7 +5,7 @@
 #include <vector>
 // #include "Tree/Solution_95.hpp"
 // #include "Tree/TreeTestUtil.hpp"
-#include "DP/Solution_53.hpp"
+#include "ToBDecided/Solution_7.hpp"
 using namespace std;
 using namespace chrono;
 
@@ -14,9 +14,8 @@ int main(int argc, char const *argv[]) {
   // start
   // code below>3
   //-------------
-  Solution_53 s;
-  vector<int> array = {1, 3, 4, -5, 6, -6, 5, 4, 3, -1, 6, -3, 2, 5, -2};
-  int res = s.maxSubArray(array);
+  Solution_7 s;
+  int res = s.reverse(2);
   cout << res << endl;
   //-------------
   // stop

@@ -130,6 +130,9 @@ Solutions are divided by problem category.
 - 53 [Maximum Subarray](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_53.hpp)
 - 647 [Palindromic Substrings](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_647.hpp)
 - 132 [Palindrome Partitioning II](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_132.hpp)
+- 85 [Maximal Rectangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_85.hpp)
+- 97 [Interleaving String](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_97.hpp)
+- 123 [Best Time to Buy and Sell Stock III](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_123.hpp)
 
 ## Math
 
