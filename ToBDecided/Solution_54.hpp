@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-05-19 21:47:45
- * @LastEditTime: 2021-05-19 22:36:21
+ * @LastEditTime: 2021-05-20 21:59:41
  * @LastEditors: Jie Lin
  * @Description:Spiral Matrix
  * @FilePath: \myleetcode\ToBDecided\Solution_54.hpp
@@ -11,7 +11,7 @@
 #define SOLUTION_54
 #include <vector>
 /**
- * @brief  给出一个矩阵，逆时针输出各元素
+ * @brief  给出一个矩阵，顺时针输出各元素
  * @note
  * @retval None
  */
