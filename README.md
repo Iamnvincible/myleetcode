@@ -89,6 +89,7 @@ Solutions are divided by problem category.
 - 106 [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_106.hpp)
 - 96 [Unique Binary Search Trees](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_96.hpp)
 - 95 [Unique Binary Search Trees II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_195.hpp)
+- 112 [Path Sum](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_112.hpp)
 
 ## Sort
 
