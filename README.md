@@ -33,6 +33,7 @@ Solutions are divided by problem category.
 
 ### Warm up
 - 206 [Reverse Linked List](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_206.hpp)
+- 203 [Remove Linked List Elements](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_203.hpp)
   
 ### Calm down
 - 2 [Add Two Numbers](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.hpp) and [C version](https://github.com/Iamnvincible/myleetcode/blob/master/LinkedList/Solution_2.h)

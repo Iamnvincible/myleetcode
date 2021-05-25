@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-05-23 22:39:46
- * @LastEditTime: 2021-05-23 22:41:08
+ * @LastEditTime: 2021-05-25 21:54:50
  * @LastEditors: Jie Lin
  * @Description:Reverse Linked List
  * @FilePath: \myleetcode\LinkedList\Solution_206.hpp
@@ -22,7 +22,7 @@ struct ListNode {
 class Solution_206 {
  public:
   ListNode* reverseList(ListNode* head) {
-    ListNode* node = NULL;
+    ListNode* node = nullptr;
     while (head) {
       auto tmp = head->next;
       head->next = node;
