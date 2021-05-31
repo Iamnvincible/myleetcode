@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-05-26 23:25:22
- * @LastEditTime: 2021-05-29 18:10:21
+ * @LastEditTime: 2021-05-29 20:21:50
  * @LastEditors: Jie Lin
  * @Description:Excel Sheet Column Title
  * @FilePath: \myleetcode\ToBDecided\Solution_168.hpp
@@ -32,7 +32,7 @@ class Solution_168 {
       ex++;
     }
     ex--;
-    while (ex > 0) {
+    while (ex >= 0) {
       int count = 0;
       while (count < base && columnNumber >= accumulate[ex]) {
         columnNumber -= std::pow(base, ex);
@@ -41,7 +41,6 @@ class Solution_168 {
       res.push_back(table[count - 1]);
       ex--;
     }
-    res.push_back(table[columnNumber - 1]);
     return res;
   }
 

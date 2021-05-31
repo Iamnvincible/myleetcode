@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
   // code below>3
   //-------------
   Solution_168 s;
-  string res = s.convertToTitle(255);
+  string res = s.convertToTitle(256);
   cout << res << endl;
   //-------------
   // stop
