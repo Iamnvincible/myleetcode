@@ -78,6 +78,10 @@ Solutions are divided by problem category.
 
 ## Tree
 
+### Warm up
+- 129 [Sum Root to Leaf Numbers](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_129.hpp)
+
+### Calm down
 - 144 [Binary Tree Preorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_144.hpp)
 - 94 [Binary Tree Inorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_94.hpp)
 - 145 [Binary Tree Postorder Traversal](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_145.hpp)
