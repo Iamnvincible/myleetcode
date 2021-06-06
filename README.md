@@ -141,6 +141,10 @@ Solutions are divided by problem category.
 - 11 [Container With Most Water](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_11.hpp)
 
 ## DP
+## Warm up
+- 120 [Unique Paths](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_62.hpp)
+
+### Calm down
 - 120 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_120.hpp)
 - 53 [Maximum Subarray](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_53.hpp)
 - 647 [Palindromic Substrings](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_647.hpp)
