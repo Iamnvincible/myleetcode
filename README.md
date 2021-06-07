@@ -142,7 +142,8 @@ Solutions are divided by problem category.
 
 ## DP
 ## Warm up
-- 120 [Unique Paths](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_62.hpp)
+- 62 [Unique Paths](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_62.hpp)
+- 63 [Unique Paths II](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_63.hpp)
 
 ### Calm down
 - 120 [Triangle](https://github.com/Iamnvincible/myleetcode/blob/master/DP/Solution_120.hpp)
