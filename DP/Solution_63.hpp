@@ -1,7 +1,7 @@
 /*
  * @Author: Jie Lin
  * @Date: 2021-06-07 22:29:34
- * @LastEditTime: 2021-06-07 22:32:56
+ * @LastEditTime: 2021-06-09 21:39:29
  * @LastEditors: Jie Lin
  * @Description:Unique Paths II
  * @FilePath: \myleetcode\DP\Solution_63.hpp
@@ -52,6 +52,28 @@ class Solution_63 {
       }
     }
     return table[0][0];
+  }
+};
+class Solution_63_2 {
+ public:
+  int uniquePathsWithObstacles(std::vector<std::vector<int>>& obstacleGrid) {
+    if (obstacleGrid.back().back() || obstacleGrid[0][0]) return 0;
+    int rows = obstacleGrid.size();
+    int cols = obstacleGrid.back().size();
+    auto sheet = std::vector<long>(cols, 0);
+    sheet.back() = 1;
+    for (int i = rows - 1; i >= 0; i--) {
+      for (int j = cols - 1; j >= 0; j--) {
+        if (obstacleGrid[i][j]) {
+          sheet[j] = 0;
+        } else if (j == cols - 1) {
+          sheet[j] = sheet[j] == 1;
+        } else {
+          sheet[j] = sheet[j] + sheet[j + 1];
+        }
+      }
+    }
+    return sheet[0];
   }
 };
 #endif
