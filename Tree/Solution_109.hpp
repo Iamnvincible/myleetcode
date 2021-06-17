@@ -1,26 +1,33 @@
 /*
  * @Author: Jie Lin
- * @Date: 2021-06-14 21:39:33
- * @LastEditTime: 2021-06-17 22:29:20
+ * @Date: 2021-06-17 22:27:22
+ * @LastEditTime: 2021-06-17 22:29:57
  * @LastEditors: Jie Lin
- * @Description:Convert Sorted Array to Binary Search Tree
- * @FilePath: \myleetcode\Tree\Solution_108.hpp
+ * @Description:Convert Sorted List to Binary Search Tree
+ * @FilePath: \myleetcode\Tree\Solution_109.hpp
  *
  */
-#ifndef SOLUTION_108
-#define SOLUTION_108
+#ifndef SOLUTION_109
+#define SOLUTION_109
 #include <vector>
 
+#include "../LinkedList/ListNode.h"
 #include "TreeNode.h"
 /**
- * @brief  将有序数组转化为平衡二叉搜索树
+ * @brief  将有序链表转化为平衡二叉搜索树，只要在108题上加一点就可以了
  * @note
  * @retval None
  */
-class Solution_108 {
+class Solution_109 {
  public:
-  TreeNode* sortedArrayToBST(std::vector<int>& nums) {
+  TreeNode* sortedListToBST(ListNode* head) {
+    std::vector<int> nums;
+    while (head) {
+      nums.push_back(head->val);
+      head = head->next;
+    }
     int size = nums.size();
+    if (size == 0) return NULL;
     TreeNode* root = new TreeNode(-1);
     binarySearch(nums, root, 0, size - 1);
     return root;
