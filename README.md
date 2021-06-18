@@ -102,6 +102,7 @@ Solutions are divided by problem category.
 - 113 [Path Sum II](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_113.hpp)
 - 108 [Convert Sorted Array to Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_108.hpp)
 - 109 [Convert Sorted List to Binary Search Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_109.hpp)
+- 111 [Minimum Depth of Binary Tree](https://github.com/Iamnvincible/myleetcode/blob/master/Tree/Solution_111.hpp)
 
 ## Sort
 
