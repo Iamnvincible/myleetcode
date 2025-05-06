@@ -19,8 +19,8 @@
  * @retval None
  */
 class Solution_167 {
- public:
-  std::vector<int> twoSum(std::vector<int>& numbers, int target) {
+public:
+  std::vector<int> twoSum(std::vector<int> &numbers, int target) {
     std::vector<int> res(2);
     for (int i = 0; i < numbers.size(); i++) {
       int index = bisect(i + 1, numbers, target - numbers[i]);
@@ -33,7 +33,7 @@ class Solution_167 {
     return res;
   }
 
- private:
+private:
   /**
    * @brief  给出起点的二分查找
    * @note
@@ -42,7 +42,7 @@ class Solution_167 {
    * @param  remainder:查找元素
    * @retval 如果找到，返回查找元素的下标，否则返回-1
    */
-  int bisect(int start, std::vector<int>& numbers, int remainder) {
+  int bisect(int start, std::vector<int> &numbers, int remainder) {
     int left = start;
     int right = numbers.size() - 1;
     while (left <= right) {
@@ -56,6 +56,26 @@ class Solution_167 {
       }
     }
     return -1;
+  }
+};
+class Solution_167_2 {
+public:
+  std::vector<int> twoSum(std::vector<int> &numbers, int target) {
+    std::vector<int> result;
+    int i = 1, j = numbers.size();
+    while (i < j) {
+      int sum = numbers[i - 1] + numbers[j - 1];
+      if (sum == target) {
+        result.push_back(i);
+        result.push_back(j);
+        break;
+      } else if (sum < target) {
+        i++;
+      } else {
+        j--;
+      }
+    }
+    return result;
   }
 };
 #endif

@@ -10,6 +10,7 @@
 #ifndef SOLUTION_168
 #define SOLUTION_168
 #include <algorithm>
+#include <climits>
 #include <cmath>
 #include <string>
 #include <vector>
