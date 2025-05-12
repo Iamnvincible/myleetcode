@@ -11,89 +11,92 @@ advanced的想法是找出里面最高的高度，
 左边，因为右边有最高的撑着，只要比前一个低，低的差距就能积到水；右边也是一样道理
  */
 #include <vector>
-class Solution_42
-{
-  public:
-    int trap(std::vector<int> &height)
-    {
-        if (height.size() <= 1)
-        {
-            return 0;
-        }
-        int L = 0;
-        int R = height.size() - 1;
-        int sub = 0;
-        int count = 0;
-        while (true)
-        {
-            while (height[L] <= sub)
-            {
-                L++;
-            }
-            while ((height[R]) <= sub)
-            {
-                R--;
-            }
-            if (L >= R)
-            {
-                break;
-            }
-            else
-            {
-                for (int i = L; i < R; i++)
-                {
-                    if (height[i] <= sub)
-                    {
-                        count++;
-                    }
-                }
-            }
-            sub++;
-        }
-        return count;
+class Solution_42 {
+ public:
+  int trap(std::vector<int> &height) {
+    if (height.size() <= 1) {
+      return 0;
     }
+    int L = 0;
+    int R = height.size() - 1;
+    int sub = 0;
+    int count = 0;
+    while (true) {
+      while (height[L] <= sub) {
+        L++;
+      }
+      while ((height[R]) <= sub) {
+        R--;
+      }
+      if (L >= R) {
+        break;
+      } else {
+        for (int i = L; i < R; i++) {
+          if (height[i] <= sub) {
+            count++;
+          }
+        }
+      }
+      sub++;
+    }
+    return count;
+  }
 };
-class Solution_42_bak
-{
-  public:
-    int trap(std::vector<int> &height)
-    {
-        int max = 0;
-        int count = 0;
-        if (height.size() <= 1)
-        {
-            return 0;
-        }
-        for (int i = 0; i < height.size(); i++)
-        {
-            max = height[i] > height[max] ? i : max;
-        }
-        int temphigh = 0;
-        for (int i = 0; i < max; i++)
-        {
-            if (temphigh <= height[i])
-            {
-                temphigh = height[i];
-            }
-            else
-            {
-                count += (temphigh - height[i]);
-            }
-        }
-        temphigh = 0;
-        //在递减时要注意循环变量最好不要用size_t
-        for (int i = height.size() - 1; i > max; i--)
-        {
-            if (temphigh <= height[i])
-            {
-                temphigh = height[i];
-            }
-            else
-            {
-                count += (temphigh - height[i]);
-            }
-        }
-        return count;
+class Solution_42_bak {
+ public:
+  int trap(std::vector<int> &height) {
+    int max = 0;
+    int count = 0;
+    if (height.size() <= 1) {
+      return 0;
     }
+    for (int i = 0; i < height.size(); i++) {
+      max = height[i] > height[max] ? i : max;
+    }
+    int temphigh = 0;
+    for (int i = 0; i < max; i++) {
+      if (temphigh <= height[i]) {
+        temphigh = height[i];
+      } else {
+        count += (temphigh - height[i]);
+      }
+    }
+    temphigh = 0;
+    // 在递减时要注意循环变量最好不要用size_t
+    for (int i = height.size() - 1; i > max; i--) {
+      if (temphigh <= height[i]) {
+        temphigh = height[i];
+      } else {
+        count += (temphigh - height[i]);
+      }
+    }
+    return count;
+  }
+};
+class Solution_42_2 {
+ public:
+  int trap(std::vector<int> &height) {
+    int result = 0;
+    int size = height.size();
+    int i = 1, j = size - 2;
+    int left_max = height[0];
+    int right_max = height[size - 1];
+    while (i <= j) {
+      int left = height[i];
+      int right = height[j];
+      left_max = std::max(left, left_max);
+      right_max = std::max(right, right_max);
+      int water = 0;
+      if (left_max < right_max) {
+        water = std::min(left_max, right_max) - left;
+        i++;
+      } else {
+        water = std::min(left_max, right_max) - right;
+        j--;
+      }
+      result += water;
+    }
+    return result;
+  }
 };
 #endif
