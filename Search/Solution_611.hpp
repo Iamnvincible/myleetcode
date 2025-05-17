@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <vector>
 /*
+611. Valid Triangle Number
 Given an integer array nums,
 return the number of triplets chosen from the array
 that can make triangles
@@ -45,7 +46,7 @@ public:
       /* approach 1*/
       int j = size - 2;
       for (int k = size - 1; k > i + 1; k--) {
-        int j = std::min(k - 1, j);
+        j = std::min(k - 1, j);
         while (j > i) {
           if (x + nums[j] <= nums[k]) {
             break;
