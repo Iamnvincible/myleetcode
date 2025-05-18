@@ -27,4 +27,5 @@
 - 209 [Minimum Size Subarray Sum](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_209.hpp)
 - 3 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_3.hpp)
 - 713 [Subarray Product Less Than K](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_713.hpp)
+- 1004 [Max Consecutive Ones III](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_1004.hpp)
 - 76 [Minimum Window Substring](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_76.hpp)
