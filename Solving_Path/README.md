@@ -29,3 +29,9 @@
 - 713 [Subarray Product Less Than K](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_713.hpp)
 - 1004 [Max Consecutive Ones III](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_1004.hpp)
 - 76 [Minimum Window Substring](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_76.hpp)
+
+## Binary Search
+二分查找
+
+在有序数组中查找目标值。使用二分查找时需要注意判断条件、循环结束条件、溢出。
+- 34 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
