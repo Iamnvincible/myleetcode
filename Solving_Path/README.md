@@ -35,3 +35,5 @@
 
 在有序数组中查找目标值。使用二分查找时需要注意判断条件、循环结束条件、溢出。
 - 34 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
+- 162 [Find Peak Element](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_162.hpp)
+- 153 [Find Minimum in Rotated Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_153.hpp)
