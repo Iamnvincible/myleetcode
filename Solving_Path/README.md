@@ -16,6 +16,7 @@
 - 11 [Container With Most Water](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_11.hpp)
 - 42 [Trapping Rain Water](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_42.hpp)
 - 125 [Valid Palindrome](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_125.hpp)
+- 2105 [Watering Plants II](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_2105.hpp)
 
 ## Sliding Window
 
