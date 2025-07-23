@@ -88,6 +88,7 @@ class Solution_34_1 {
   当 i 不越界时，nums[i] 可能 == target，说明目标数存在于数字，
   或者，nums[i] > target，说明数组中所有元素 > target，
   那么 nums[i] >= target.
+  所有 i 左边的数字都< target，nums[i] 是第一个 ≥ target 的位置。
 
    */
   int searchBound(std::vector<int>& nums, int target) {

@@ -15,6 +15,8 @@
 
 - 11 [Container With Most Water](https://github.com/Iamnvincible/myleetcode/blob/master/Gready/Solution_11.hpp)
 - 42 [Trapping Rain Water](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_42.hpp)
+- 125 [Valid Palindrome](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_125.hpp)
+- 2105 [Watering Plants II](https://github.com/Iamnvincible/myleetcode/blob/master/Array/Solution_2105.hpp)
 
 ## Sliding Window
 
@@ -29,9 +31,14 @@
 - 713 [Subarray Product Less Than K](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_713.hpp)
 - 1004 [Max Consecutive Ones III](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_1004.hpp)
 - 76 [Minimum Window Substring](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_76.hpp)
+- 2958[Length of Longest Subarray With at Most K Frequency](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_2958.hpp)
+- 2730 [Find the Longest Semi-Repetitive Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_2730.hpp)
+
 
 ## Binary Search
 二分查找
 
 在有序数组中查找目标值。使用二分查找时需要注意判断条件、循环结束条件、溢出。
 - 34 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
+- 162 [Find Peak Element](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_162.hpp)
+- 153 [Find Minimum in Rotated Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_153.hpp)

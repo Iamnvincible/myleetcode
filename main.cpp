@@ -4,24 +4,27 @@
 #include <iostream>
 #include <string>
 #include <vector>
-// #include "Tree/Solution_95.hpp"
-// #include "Tree/TreeTestUtil.hpp"
-// #include "LinkedList/Solution_203.hpp"
-#include "ToBDecided/Solution_168.hpp"
+// include solution file
+// #include "String/Solution_2730.hpp"
 using namespace std;
 using namespace chrono;
 
 int main(int argc, char const *argv[]) {
   auto _start_clock = system_clock::now();
-  // start
+  // define solution class and give test case
+  // and run the function of the class and get the result
+  // ---example begin--
+  // Solution_2730 s;
+  // string str = "5494";
+  // int res = s.longestSemiRepetitiveSubstring(str);
+  // cout << res << endl;
+  // ---example end---
   // code below>3
   //-------------
-  Solution_168 s;
-  string res = s.convertToTitle(256);
-  cout << res << endl;
+
   //-------------
-  // stop
-  // DONT code below
+  // code above
+  //  DONT code below
   auto _stop_clock = system_clock::now();
   auto _duration_time = duration_cast<microseconds>(_stop_clock - _start_clock);
   cout << "costs "
