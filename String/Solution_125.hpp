@@ -7,10 +7,11 @@ considering only alphanumeric characters and ignoring cases.
 Note: For the purpose of this problem,
 we define empty string as valid palindrome.
 判断回文序列
-只考虑字母数字，不考虑字母的大小写
-从两边靠拢
-判断符合字母数字条件后
-统一转为大写或小写判断
+给出一个字符串，只考虑字母数字，不考虑字母的大小写，判断这个字符串是否回文
+
+相向双指针做法
+从两个指针从两边靠拢，跳过非字母数字 isalnum，两边指针自增或自减
+转换小写后判断 tolower，不相等立即返回 false。能成功遍历完成即为回文。
  */
 #include <string>
 class Solution_125 {
