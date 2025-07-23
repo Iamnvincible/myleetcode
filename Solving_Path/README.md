@@ -32,6 +32,8 @@
 - 1004 [Max Consecutive Ones III](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_1004.hpp)
 - 76 [Minimum Window Substring](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_76.hpp)
 - 2958[Length of Longest Subarray With at Most K Frequency](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_2958.hpp)
+- 2730 [Find the Longest Semi-Repetitive Substring](https://github.com/Iamnvincible/myleetcode/blob/master/String/Solution_2730.hpp)
+
 
 ## Binary Search
 二分查找
