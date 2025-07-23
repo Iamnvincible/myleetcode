@@ -31,6 +31,7 @@
 - 713 [Subarray Product Less Than K](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_713.hpp)
 - 1004 [Max Consecutive Ones III](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_1004.hpp)
 - 76 [Minimum Window Substring](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_76.hpp)
+- 2958[Length of Longest Subarray With at Most K Frequency](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_2958.hpp)
 
 ## Binary Search
 二分查找
