@@ -44,3 +44,4 @@
 - 34 [Longest Substring Without Repeating Characters](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_34.hpp)
 - 162 [Find Peak Element](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_162.hpp)
 - 153 [Find Minimum in Rotated Sorted Array](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_153.hpp)
+- 2529 [Maximum Count of Positive Integer and Negative Integer](https://github.com/Iamnvincible/myleetcode/blob/master/Search/Solution_2529.hpp)
